@@ -69,3 +69,9 @@ footer {
     padding: 5px;
     width: 98%;
 }
+/* images */
+.rj-image {
+    border: 1px solid greenyellow;
+    border-radius: 50%;
+    width: 25%;
+}
