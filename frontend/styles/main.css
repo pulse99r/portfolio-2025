@@ -12,16 +12,23 @@ body {
 main {
     height: 115vh;
 }
+
+/*  - - -   logo styles   - - - */
 .logo {
     border: 1px gray solid;
     font-size: 3em;
-    margin-bottom: 5px;
-    transition: color 2s;
+    font-weight: 600;
+    margin: 5px 10px 10x 5px;
+    padding: 3px;
+    transition: color 2s, border 2s;
 }
-.logo:hover, .hero:hover {
+.logo:hover{
+    border: 1px solid green;
     color: greenyellow;
     cursor: pointer;
 }
+
+/*  - - -     nav styles    - - -  */
 .nav  {
     align-items: center;
     background-color: gray;
@@ -29,14 +36,6 @@ main {
     justify-content:center;
     margin-top: 5px;
     padding: 6px 0;
-}
-/* - - -   hero styles   - - -  */
-.hero {
-    align-content: center;
-    font-size: 2.5em;
-    margin: auto;
-    transition: color 2s;
-    width: 80%;
 }
 .nav-item {
     border-radius: 5px;
@@ -49,6 +48,38 @@ main {
     cursor: pointer;
 }
 
+/* - - -   hero styles   - - -  */
+.hero {
+    align-content: center;
+    font-size: 2.5em;
+    margin: auto;
+    transition: color 2s;
+    width: 80%;
+}
+.hero:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+
+/*  - - -   about styles   - - -  */
+
+
+
+/* - - - -     image styles    - - - - */
+.rj-image {
+    border: 1px solid greenyellow;
+    border-radius: 50%;
+    width: 25%;
+    transition: border 2s .25s, width 2s .25s;
+}
+.rj-image:hover {
+    border: 3px solid greenyellow;
+    width: 25%;
+}
+
+
+/*  - - -   project styles   - - -  */
 .projects {
     border-bottom: 1px gray solid;
     border-top: 1px gray solid;
@@ -88,13 +119,6 @@ main {
     font-size: 1.2em;
     margin: auto;
     width: 63%;
-}
-
-/* - - - -     image styles    - - - - */
-.rj-image {
-    border: 1px solid greenyellow;
-    border-radius: 50%;
-    width: 25%;
 }
 
 /*  - - - -    footer styles   - - - -  */
