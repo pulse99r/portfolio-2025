@@ -4,10 +4,13 @@ body {
     border-radius: 8px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    height: 101vh;
+    height: 123vh;
     margin: 8px 8px;
     padding: 15px;
     overflow-y: scroll;
+}
+main {
+    height: 115vh;
 }
 .logo {
     border: 1px gray solid;
@@ -51,44 +54,62 @@ body {
     border-top: 1px gray solid;
 }
 
-footer {
-    border-top: .5px gray solid;
-    font-family: sans-serif;
-    font-size: 12px;
-    margin: 50px 0 0 0;
-    padding: 8px 0;
-}
-
-
-.contact .contact-form span {
-    margin-bottom: 5px;
-}
-.contact-form span, #send {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2em;
-    margin: auto;
-    width: 60%;
-}
-.contact-form span input {
-    height: 40px;
-    height: 33px;
-    padding: 0 10px;
-} 
-.contact-form span textarea {
-    height: 40px;
-    height: 100px;
-    padding: 0 10px;
-} 
+/* - - - -    contact styles   - - - -  */
 .conact-me-hdr {
     background-color: gray;
     color: greenyellow;
     padding: 5px 5px 5px 10px;
     width: 98%;
 }
-/* images */
+
+.contact .contact-form fieldset {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 80%;
+}
+.contact-form fieldset input {
+    height: 40px;
+    height: 33px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    width: 60%;
+} 
+.contact-form fieldset textarea {
+    height: 40px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    width: 60%;
+} 
+.contact-form fieldset, #send {
+    font-size: 1.2em;
+    margin: auto;
+    width: 63%;
+}
+
+/* - - - -     image styles    - - - - */
 .rj-image {
     border: 1px solid greenyellow;
     border-radius: 50%;
     width: 25%;
+}
+
+/*  - - - -    footer styles   - - - -  */
+footer {
+    align-content: space-evenly;
+    border-top: .5px gray solid;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 50px 0 100px 0;
+    padding: 8px 0;
+}
+footer span {
+    margin: 0 10px;
+}
+footer span a {
+    color: gray;
 }
