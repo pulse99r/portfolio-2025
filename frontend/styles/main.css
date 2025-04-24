@@ -87,13 +87,24 @@ main {
 
 /*  - - -   project styles   - - -  */
 .projects {
-    align-content: center;
     border-bottom: 1px gray solid;
     border-top: 1px gray solid;
     display: flex;
+    flex-direction: column;
+}
+.project-hdr {
+    background-color: gray;
+    color: greenyellow;
+    margin: 25px 0 25px 0;
+    padding: 5px 5px 5px 10px;
+    width: 98%;
+}
+.card-container {
+    align-content: center;
     gap: 10px;
     justify-content: center;
     padding: 10px 0 10px 0;
+    display: flex;
 }
 .card {
     border: 1px darkgray solid;
@@ -101,6 +112,11 @@ main {
     height: 400px;
     padding: 10px;
     width: 280px;
+}
+.project-label p {
+    color: gray;
+    font-size: 4em;
+
 }
 
 /* - - - -    contact styles   - - - -  */
