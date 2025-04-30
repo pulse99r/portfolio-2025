@@ -3,7 +3,7 @@ body {
     background-color: black;
     border: 1px gray solid;
     border-radius: 8px;
-    color: white;
+    color: gray;
     font-family: Arial, Helvetica, sans-serif;
     height: 163vh;
     margin: 8px 8px;
@@ -22,6 +22,7 @@ main {
 /*  - - -   logo styles   - - - */
 .logo {
     border: 1px gray solid;
+    border-radius: 8px;
     font-size: 3em;
     font-weight: 600;
     margin: 5px 10px 10x 5px;
@@ -38,6 +39,7 @@ main {
 .nav  {
     align-items: center;
     background-color: gray;
+    color: greenyellow;
     display: flex;
     justify-content:center;
     margin-top: 5px;
@@ -56,11 +58,12 @@ main {
 
 /* - - -   hero styles   - - -  */
 .hero {
-    align-content: center;
+    color: gray;
     font-size: 2.5em;
-    margin: auto;
+    justify-items: center;
+    /* margin: auto; */
     transition: color 2s;
-    width: 80%;
+    /* width: 75%; */
 }
 .hero:hover {
     color: greenyellow;
@@ -71,31 +74,29 @@ main {
 /*  - - -   about styles   - - -  */
 .about {
     align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4em;
     justify-content: center;
-    display: grid;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-    "about1"
-    "about2"
-    "about3"
-    "rj-image";
+    margin: 0 10% 20px 10%;
+    padding: 4%;
 }
 
 
 /* - - - -     image styles    - - - - */
 .rj-image {
     border: 1px solid greenyellow;
-    border-radius: 50%;
+    border-radius: 25%;
     left: 100px;
-    position: abbsolute;
-    top: 100px;
-    transition: border 2s .25s, width 2s .25s;
-    width: 25%;
+    margin: 0 0 20px 20%;
+    transition: border 2s .15s, width 2s .15s;
+    width: 60%;
 }
 .rj-image:hover {
     border: 3px solid greenyellow;
-    width: 25%;
+    width: 68%;
 }
 
 
