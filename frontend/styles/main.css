@@ -11,7 +11,7 @@ body {
     overflow-y: scroll;
 }
 main {
-    height: 175vh;
+    height: 183vh;
 }
 .hide {
     display: none;
@@ -146,7 +146,6 @@ main {
 .project-label p {
     color: gray;
     font-size: 4em;
-
 }
 
 /* - - - -    contact styles   - - - -  */
@@ -159,7 +158,10 @@ main {
 }
 
 .contact .contact-form fieldset {
+    border: 1px solid gray;
     align-items: center;
+    border-radius: 10px;
+    padding: 25px 0;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -173,6 +175,7 @@ main {
     padding: 0 10px;
     width: 60%;
 } 
+
 .contact-form fieldset textarea {
     height: 40px;
     height: 100px;
@@ -184,6 +187,16 @@ main {
     font-size: 1.2em;
     margin: auto;
     width: 62%;
+}
+
+#send:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+#send:active {
+    color: rgb(101, 146, 34);
+    cursor: pointer;
+    font-weight: 200;
 }
 
 /*  - - - -    footer styles   - - - -  */
