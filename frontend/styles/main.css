@@ -5,13 +5,13 @@ body {
     border-radius: 8px;
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
-    height: 163vh;
+    height: 200vh;
     margin: 8px 8px;
     padding: 15px;
     overflow-y: scroll;
 }
 main {
-    height: 155vh;
+    height: 175vh;
 }
 .hide {
     display: none;
@@ -49,23 +49,27 @@ main {
     border-radius: 5px;
     margin: 0 10px;
     padding: 3px 15px;
+    transition: background-color .5s .25s, color .5s .25s;
 }
 .nav-item:hover {
-    background-color: azure;
+    background-color: rgb(158, 168, 168);
     color:black;
     cursor: pointer;
 }
 
 /* - - -   hero styles   - - -  */
-.hero {
+.home {
+    border: 1px gray solid;
+    border-radius: 10px;
     color: gray;
     font-size: 2.5em;
+    height: 500px;
     justify-items: center;
-    /* margin: auto; */
+    margin: 25px 10% 20px 10%;
     transition: color 2s;
     /* width: 75%; */
 }
-.hero:hover {
+.home:hover {
     color: greenyellow;
     cursor: pointer;
 }
