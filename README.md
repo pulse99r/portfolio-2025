@@ -8,10 +8,18 @@ In 2022 I discovered the Computer Science program offered by Pursuit, a Google-F
 OPEN FOR WORK:
 I'm now open for roles as a Frontend, Backend, or Database Engineering, full-stack developer opportunities.
 
-This project is designed using: 
+Techhnology stack for this project: 
 - HTML
 - CSS 
 
+
+Directory tree for this project:
+portfolio-2025/
+  |-- README.md
+  |-- frontend/
+       |-- assets/
+       |-- styles/
+       |-- index.html
 
 DEVELOPER: Kenti Johnson
 DEPLOYED SITE: https://kenti-johnson-2025.netlify.app/
