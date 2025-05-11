@@ -62,52 +62,63 @@ main {
 
 /* - - -   hero styles   - - -  */
 .home {
+    align-items:center;
     border: 1px gray solid;
     border-radius: 10px;
     color: gray;
+    display: flex;
     height: 500px;
-    justify-items: center;
-    margin: 25px 10% 20px 10%;
-    /* width: 75%; */
+    justify-items: left;
+    margin: 25px 10% 10% 10%;
+    padding: 25px 0;
 }
 .home h1 {
     font-size: 4em;
-    transition: color 2s;
+    margin-left: -65px;
+    transition: color 2s, font-size 2s;
+    width: 52%;
+}
+.home-img{
+    width: 48%;
 }
 .home h1:hover {
     color: greenyellow;
     cursor: pointer;
+    font-size: 4.5em;
 }
 
 
 /*  - - -   about styles   - - -  */
-.about {
-    align-items: center;
+.about-text {
     border: 1px solid gray;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 1.4em;
     justify-content: center;
     margin: 0 10% 20px 10%;
-    padding: 4%;
+    padding: 20px 30px;
 }
-
-
+.about-hdr {
+    background-color: gray;
+    color: greenyellow;
+    margin: 25px auto 10px auto;
+    padding: 5px 5px 5px 10px;
+    width: 98%;
+}
 /* - - - -     image styles    - - - - */
 .rj-image {
     border: 1px solid greenyellow;
     border-radius: 25%;
-    left: 100px;
-    margin: 0 0 20px 20%;
+    /* left: 90px; */
+    margin: 0 0 20px 8%;
     transition: border 2s .15s, width 2s .15s;
-    width: 60%;
+    width: 55%;
 }
 .rj-image:hover {
     border: 3px solid greenyellow;
-    width: 68%;
+    width: 62%;
 }
-
 
 /*  - - -   project styles   - - -  */
 .projects {
