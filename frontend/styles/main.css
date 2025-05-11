@@ -5,13 +5,13 @@ body {
     border-radius: 8px;
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
-    height: 260vh;
+    height: 560vh;
     margin: 8px 8px;
     padding: 15px;
     overflow-y: scroll;
 }
 main {
-    height: 244vh;
+    height: 520vh;
 }
 .hide {
     display: none;
@@ -39,22 +39,24 @@ main {
 .nav  {
     align-items: center;
     background-color: gray;
-    color: greenyellow;
+    color: rgb(63, 61, 61);
+    /* color: greenyellow; */
     display: flex;
     justify-content:center;
     margin-top: 5px;
     margin: 5px auto 5px auto;
     padding: 6px 0;
 }
+
 .nav-item {
     border-radius: 5px;
     margin: 0 10px;
     padding: 3px 15px;
-    transition: background-color .5s .25s, color .5s .25s;
+    transition: background-color .5s .25s, color 1s;
 }
 .nav-item:hover {
     background-color: rgb(158, 168, 168);
-    color:black;
+    color:greenyellow;
     cursor: pointer;
 }
 
@@ -117,7 +119,7 @@ main {
 .project-hdr {
     background-color: gray;
     color: greenyellow;
-    margin: 25px auto 25px auto;
+    margin: 25px auto 10px auto;
     padding: 5px 5px 5px 10px;
     width: 98%;
 }
@@ -159,42 +161,48 @@ main {
     padding: 5px 5px 5px 10px;
     width: 98%;
 }
-.img-container {
+.skills .icon-container {
     align-content: center;
     border: 1px solid gray;
     border-radius: 10px;
     display: grid;
     gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 350px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 480px;
     justify-items: center;
     margin: 0 auto;
-    padding: 80px 50px;
-    width: 70%;
+    padding: 70px 30px;
+    width: 80%;
 }
 
 .skills-icon {
     border-radius: 8px;
     height: 90px;
-    margin: 5px;
+    margin: 8x;
     padding: 10px 3px;
 }
-.img-container span span {
+
+.icon-container span span {
     text-align: center;
     display: none;
-    margin-top: -60px;
+    margin-top: -70px;
 }
-.img-container span:hover .hidden {
+.icon-container span:hover .hidden {
     background-color: white;
-    color: black;
+    color: rgb(125, 79, 110);
     display: block;
-    opacity:c 10;
-    padding: 4px 5px;
-    z-index: 2;
+    font-size: 1.1em;
+    font-weight: 700;
+    opacity: 10;
+    padding: 2px 10px;
+    z-index:1;
 }
-
+.skills span {
+    align-items: center;
+    justify-items: center;
+}
 /* - - - -    contact styles   - - - -  */
-.conact-me-hdr {
+.contact-me-hdr {
     background-color: gray;
     color: greenyellow;
     margin: 25px auto 25px auto;
@@ -259,4 +267,53 @@ footer span {
 }
 footer span a {
     color: gray;
+}
+
+@media (min-width: 978px) {
+    .skills .icon-container {
+        align-content: center;
+        /* border: 1px solid gray;
+        border-radius: 10px;
+        display: grid;
+        gap: 5px; */
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 400px;
+        /* justify-items: center;
+        margin: 0 auto;
+        padding: 80px 50px;
+        width: 80%; */
+    }
+}
+@media (max-width: 708px) {
+    .skills .icon-container {
+        align-content: center;
+        /* border: 1px solid gray;
+        border-radius: 10px;
+        display: grid;
+        gap: 5px; */
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 620px;
+        /* justify-items: center;
+        margin: 0 auto;
+        padding: 80px 50px;
+        width: 80%; */
+    }
+}
+@media (max-width: 544px) {
+    .skills .icon-container {
+        align-content: center;
+        /* border: 1px solid gray;
+        border-radius: 10px;
+        display: grid;
+        gap: 5px; */
+        grid-template-columns: 1fr 1fr;
+        height: 1020px;
+
+    }
+    body{
+        height: 760vh;
+    }
+    main {
+        height: 720vh;
+    }
 }
