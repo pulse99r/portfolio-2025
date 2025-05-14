@@ -69,7 +69,7 @@ main {
     display: flex;
     height: 500px;
     justify-items: left;
-    margin: 25px 10% 10% 10%;
+    margin: 25px 5% 10% 5%;
     padding: 25px 0;
 }
 .home h1 {
